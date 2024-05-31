@@ -23,8 +23,16 @@ public class SPCT {
     @Column(name="IdKichThuoc")
     private Integer idKT;
 
-    @Column(name="IdSanPham")
-    private Integer idSP;
+//    @Column(name="IdSanPham")
+//    private Integer idSP;
+
+    /**
+     * (N+1) Query Problem
+     * FetchType -> Eager/Lazy
+     */
+    @ManyToOne
+    @JoinColumn(name="IdSanPham")
+    private SanPham sp;
 
     @Column(name="MaSPCT")
     private String maSPCT;

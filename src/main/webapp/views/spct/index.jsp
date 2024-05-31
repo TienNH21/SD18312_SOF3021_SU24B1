@@ -48,7 +48,8 @@
         <c:forEach items="${ data }" var="spct">
             <tr>
                 <td>${ spct.id }</td>
-                <td>${ spct.tenSP }</td>
+                <td>${ spct.sp.ten }</td>
+<%--                <td>${ spct.tenSP }</td>--%>
                 <td>${ spct.idMS }</td>
                 <td>${ spct.idKT }</td>
                 <td>${ spct.maSPCT }</td>
